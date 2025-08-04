@@ -1,6 +1,6 @@
 # 🎯 Donation Website - Frontend
 
-A web donation application that allows users to make donations through various banks with Midtrans payment gateway integration.
+A web donation application sandbox that allows users to make donations through various banks with Midtrans payment gateway integration.
 
 ## 📋 Project Description
 
@@ -26,7 +26,6 @@ This donation website is built using React and integrated with a backend API to 
 - **Kotlin** - Programming language
 - **Maven** - Build tool and dependency management
 - **Midtrans** - Payment gateway integration
-- **REST API** - Endpoint for creating donations
 
 ### Integration
 - **REST API** - Communication between frontend and backend
@@ -49,8 +48,8 @@ This frontend application requires a backend API to function properly. For backe
 
 ### 1. Clone Repository
 ```bash
-git clone <repository-url>
-cd donation-web/frontend
+git clone https://github.com/AdnSmile/donation-fe.git
+cd donation-fe
 ```
 
 ### 2. Install Dependencies
@@ -70,7 +69,7 @@ Or create manually with content:
 
 ```env
 # Backend API URL
-VITE_BE_API_URL=http://localhost:8000/api
+VITE_BE_API_URL=http://localhost:8080/api
 ```
 
 **Note:** 
@@ -100,54 +99,6 @@ The frontend will run at `http://localhost:5173`
 - Open your browser and go to `http://localhost:5173`
 - Make sure both backend and frontend servers are running
 
-## 🏗️ Project Architecture
-
-This is a full-stack donation application with the following architecture:
-
-```
-donation-web/
-├── frontend/                # React application (this repository)
-│   ├── src/
-│   │   ├── App.jsx          # Main component - Donation form
-│   │   ├── Payment.jsx      # Payment details page
-│   │   ├── main.jsx         # Entry point with routing
-│   │   ├── index.css        # Tailwind CSS imports
-│   │   └── assets/
-│   │       └── react.svg
-│   ├── public/
-│   │   └── vite.svg
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   ├── .env                 # Environment variables (create from env.example)
-│   ├── env.example          # Environment variables template
-│   └── README.md
-└── donation-be/             # Backend repository
-    ├── src/                 # Spring Boot source code
-    ├── pom.xml              # Maven dependencies
-    └── README.md            # Backend documentation
-```
-
-## 📁 Frontend Project Structure
-
-```
-frontend/
-├── src/
-│   ├── App.jsx              # Main component - Donation form
-│   ├── Payment.jsx          # Payment details page
-│   ├── main.jsx             # Entry point with routing
-│   ├── index.css            # Tailwind CSS imports
-│   └── assets/
-│       └── react.svg
-├── public/
-│   └── vite.svg
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-├── .env                     # Environment variables (create from env.example)
-├── env.example              # Environment variables template
-└── README.md
-```
 
 ## 🔧 Available Scripts
 
@@ -199,7 +150,7 @@ npm run lint         # Run ESLint
 
 ### 1. Donation Form (`App.jsx`)
 - **Input Fields:**
-  - Full name (required)
+  - Name (required)
   - Email (required)
   - Target bank (BCA, BRI, BNI)
   - Donation amount (minimum Rp 1,000)
@@ -229,7 +180,7 @@ npm run lint         # Run ESLint
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `VITE_BE_API_URL` | Backend API URL | `http://localhost:8000/api` |
+| `VITE_BE_API_URL` | Backend API URL | `http://localhost:8080/api` |
 
 **Note:** All environment variables must be prefixed with `VITE_` to be accessible in the frontend.
 
@@ -256,7 +207,7 @@ npm run lint         # Run ESLint
 
 **1. CORS Error**
 ```
-Access to fetch at 'http://localhost:8000/api/donate' from origin 'http://localhost:5173' has been blocked by CORS policy
+Access to fetch at 'http://localhost:8080/api/donate' from origin 'http://localhost:5173' has been blocked by CORS policy
 ```
 **Solution:** Make sure the backend allows CORS from the frontend origin.
 
@@ -277,7 +228,7 @@ Cannot GET /payment
 
 **4. Backend Connection Failed**
 ```
-Failed to fetch from http://localhost:8000/api/donate
+Failed to fetch from http://localhost:8080/api/donate
 ```
 **Solution:** 
 - Ensure the backend server is running (see [Backend Repository](https://github.com/AdnSmile/donation-be))
@@ -316,7 +267,7 @@ This project uses the MIT license. See the `LICENSE` file for more details.
 
 ## 📞 Support
 
-If you have questions or issues, please create an issue in the repository or contact the development team.
+If you have questions or issues, please create an issue in the repository or contact the developer.
 
 ---
 
