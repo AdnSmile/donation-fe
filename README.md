@@ -256,11 +256,11 @@ This project uses the MIT license. See the `LICENSE` file for more details.
 ## 🔗 Related Repositories
 
 - **[Backend Repository](https://github.com/AdnSmile/donation-be)** - Spring Boot backend with Midtrans integration
-- **[Frontend Repository](https://github.com/your-username/donation-web)** - React frontend (this repository)
+- **[Frontend Repository](https://github.com/AdnSmile/donation-fe)** - React frontend (this repository)
 
 ## 📚 Useful Links
 
-- **[Midtrans Documentation](https://docs.midtrans.com/)** - Payment gateway documentation
+- **[Midtrans Documentation](https://docs.midtrans.com/docs/midtrans-account)** - Payment gateway documentation
 - **[Spring Boot Documentation](https://spring.io/projects/spring-boot)** - Backend framework docs
 - **[React Documentation](https://react.dev/)** - Frontend framework docs
 - **[Tailwind CSS Documentation](https://tailwindcss.com/docs)** - CSS framework docs
