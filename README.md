@@ -265,10 +265,6 @@ This project uses the MIT license. See the `LICENSE` file for more details.
 - **[React Documentation](https://react.dev/)** - Frontend framework docs
 - **[Tailwind CSS Documentation](https://tailwindcss.com/docs)** - CSS framework docs
 
-## 📞 Support
-
-If you have questions or issues, please create an issue in the repository or contact the developer.
-
 ---
 
 **Happy Coding! 🚀**
